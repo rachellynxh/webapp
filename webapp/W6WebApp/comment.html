@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Add comment to playlist</title>
+
+      <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+      <script type="text/javascript" src="JS/bootstrap.js"></script>
+      <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+
+      <script type="text/javascript" src="JS/app.js"></script>
+
+  </head>
+  
+  <body>
+
+    <div  class="container">
+
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: center;">
+              <h3>Add Comment</h3>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+        <!--New Asset Box-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+              <p>Add details below</p>
+
+              <form style="font-size: 10pt;" id="newAssetForm">
+                <div class="mb-3">
+                  <label for="Title" class="form-label">Video Title</label>
+                  <input type="text" class="form-control" id="Title">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Rating" class="form-label">Rating</label>
+                  <input type="number" class="form-control" id="Rating">
+                </div>
+
+                <div class="mb-3">
+                  <label for="UserName" class="form-label">Your Username</label>
+                  <input type="text" class="form-control" id="UserName">
+                </div>
+
+                <div class="mb-3">
+                  <label for="EmailAddress" class="form-label">Your Email Address</label>
+                  <input type="text" class="form-control" id="EmailAddress">
+                </div>
+
+                <div class="mb-3">
+                  <label for="FirstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="FirstName">
+                </div>
+
+                <div class="mb-3">
+                  <label for="LastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="LastName">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Note" class="form-label">Your comment</label>
+                  <input type="text" class="form-control" id="Note">
+                </div>
+            
+                <button type="button" id="subNewForm" class="btn btn-primary">Submit</button> <br/><br/>
+                
+              </form>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+        <!-- view Asset Area-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;" >
+              <div style="padding:5px;">
+                <button  id = "retAssets" type="button" class="btn btn-primary">View your comment</button>
+              </div>
+
+              <div id="AssetList">
+
+                <h4>Please click the view button if you wish to view your comment(s) on the system.</h4>
+
+              </div>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+    </div>
+  
+  </body>
+</html>
